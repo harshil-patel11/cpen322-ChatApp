@@ -1,0 +1,70 @@
+// conn = new Mongo();
+// db = conn.getDB("cpen322-messenger");
+// db.dropDatabase();
+// imgHost = "/";
+
+// result = db.chatrooms.insert([
+//   {
+//     _id: "room-1",
+//     name: "Everyone in CPEN322",
+//     image: imgHost + "assets/everyone-icon.png",
+//   },
+//   {
+//     _id: "room-2",
+//     name: "Foodies only",
+//     image: imgHost + "assets/bibimbap.jpg",
+//   },
+//   {
+//     _id: "room-3",
+//     name: "Gamers unite",
+//     image: imgHost + "assets/minecraft.jpg",
+//   },
+//   {
+//     _id: "room-4",
+//     name: "Canucks Fans",
+//     image: imgHost + "assets/canucks.png",
+//   },
+// ]);
+
+// print(result);
+
+// result = db.conversations.insert([
+//   {
+//     room_id: "room-1",
+//     timestamp: 1596233125227,
+//     messages: [
+//       {
+//         username: "Alice",
+//         text: "Hello!",
+//       },
+//       {
+//         username: "Bob",
+//         text: "Hi!",
+//       },
+//       {
+//         username: "Charlie",
+//         text: "What's up?",
+//       },
+//     ],
+//   },
+// ]);
+
+// print(result);
+
+conn = new Mongo();
+db = conn.getDB("cpen322-messenger");
+
+result = db.users.insert([
+  {
+    username: "alice",
+    password:
+      "1htYvJoddV8mLxq3h7C26/RH2NPMeTDxHIxWn49M/G0wxqh/7Y3cM+kB1Wdjr4I=",
+  },
+  {
+    username: "bob",
+    password:
+      "MIYB5u3dFYipaBtCYd9fyhhanQkuW4RkoRTUDLYtwd/IjQvYBgMHL+eoZi3Rzhw=",
+  },
+]);
+
+print(result);

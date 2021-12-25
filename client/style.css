@@ -1,0 +1,76 @@
+/*
+References for learning styles used in this assignment:
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+https://www.emailonacid.com/blog/article/email-development/emailology_media_queries_demystified_min-width_and_max-width/
+
+https://www.w3schools.com/css/css_align.asp
+
+https://www.w3schools.com/cssref/sel_hover.asp
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#app-menu {
+  display: flex;
+}
+
+.menu-item {
+  width: 50%;
+  height: 3rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.menu-item > a {
+  text-decoration: none;
+  color: white;
+}
+
+#app-view {
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #app-view {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #app-view {
+    width: 80%;
+  }
+}
+
+div.my-message {
+  text-align: right;
+  background-color: aqua;
+}
+
+.message-list {
+  overflow: scroll;
+  height: 10px;
+}
+
+#app-menu li:hover {
+  color: yellow;
+  background-color: yellow;
+}
+
+#app-menu li {
+  display: inline;
+  background-color: blue;
+}
+
+#app-menu li img {
+  width: 40px;
+  height: 40px;
+}
+
+.room-list li:hover {
+  background-color: aquamarine;
+}
